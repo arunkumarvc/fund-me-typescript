@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# Hardhat Funding Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## About This Project
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+- It's part of the FCC Blockchain course.
+- In this smart contract, we have features for funding and withdrawing the amount.
+- It also stores the funders addresses with the amount they funded.
+- Only the contract deployer can withdraw the funded amount.
+- In this, we're using Chainlink's AggregatorV3Interface priceFeed to get the current price of the blockchain tokens.
